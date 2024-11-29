@@ -1,0 +1,175 @@
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <h2 class="mb-4">Our Menu</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+          live the blind texts.</p>
+      </div>
+    </div>
+  </div>
+  <div id="fh5co-featured" class="container-fluid">
+    <div class="row">
+      <div class="fh5co-grid">
+        {{#with foods.[0]}}
+        <div class="fh5co-v-half to-animate-2 bounceIn animated">
+          <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})"></div>
+          <div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+            <h2 class="text-dark"></h2>
+            <span class="pricing">${{price}}</span>
+            <p>{{summary}}</p>
+          </div>
+        </div>
+        {{/with}}
+        <div class="fh5co-v-half">
+          {{#with foods.[1]}}
+          <div class="fh5co-h-row-2 to-animate-2 bounceIn animated">
+            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+            </div>
+            <div class="fh5co-v-col-2 fh5co-text arrow-left">
+              <h2 class="text-dark">{{name}}</h2>
+              <span class="pricing">${{price}}</span>
+              <p>{{summary}}</p>
+            </div>
+          </div>
+          {{/with}}
+
+          {{#with foods.[2]}}
+          <div class="fh5co-h-row-2 fh5co-reversed to-animate-2 bounceIn animated">
+            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+            </div>
+            <div class="fh5co-v-col-2 fh5co-text arrow-right">
+              <h2 class="text-dark">{{name}}</h2>
+              <span class="pricing">${{price}}</span>
+              <p>{{summary}}</p>
+            </div>
+          </div>
+        </div>
+        {{/with}}
+
+        <div class="fh5co-v-half">
+          {{#with foods.[3]}}
+          <div class="fh5co-h-row-2 fh5co-reversed to-animate-2 bounceIn animated">
+            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+            </div>
+            <div class="fh5co-v-col-2 fh5co-text arrow-right">
+              <h2 class="text-dark">{{name}}</h2>
+              <span class="pricing">${{price}}</span>
+              <p>{{summary}}</p>
+            </div>
+          </div>
+          {{/with}}
+
+          {{#with foods.[4]}}
+          <div class="fh5co-h-row-2 to-animate-2 bounceIn animated">
+            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})">
+            </div>
+            <div class="fh5co-v-col-2 fh5co-text arrow-left">
+              <h2 class="text-dark">{{name}}</h2>
+              <span class="pricing">${{price}}</span>
+              <p>{{summary}}</p>
+            </div>
+          </div>
+        </div>
+        {{/with}}
+
+        {{#with foods.[5]}}
+        <div class="fh5co-v-half to-animate-2 bounceIn animated">
+          <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{imagePath}})"></div>
+          <div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+            <h2 class="text-dark">{{name}}</h2>
+            <span class="pricing">${{price}}</span>
+            <p>{{summary}}</p>
+          </div>
+        </div>
+        {{/with}}
+
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col text-center">
+      <div class="block-27">
+        {{{createPagination pagination leftText="&lt;" rightText="&gt;"}}}
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="ftco-section contact-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <h2 class="mb-4">Reserve a Table</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+          live the blind texts.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 to-animate-2 fadeInUp animated">
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4">Contact Information</h2>
+          </div>
+          <div class="col-md-12 mb-3">
+            <p><span>Fullname:</span> Hoang Ngoc Quy</p>
+          </div>
+          <div class="col-md-12 mb-3">
+            <p><span>Phone:</span> <a>+ 84 9324 97860</a></p>
+          </div>
+          <div class="col-md-12 mb-3">
+            <p><span>Email:</span> <a>youremail@mail.com</a></p>
+          </div>
+          <div class="col-md-12 mb-3">
+            <p><span>Website:</span> <a href="http://ptudw-22880267.onrender.com" target="_blank">Link to
+                your EShop Project Website - Video 38</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <form class="col-md-6 to-animate-2 fadeInUp animated" method="post" action="/" onsubmit="handleSubmit(event)">
+        <h2 class="h4">Reservation Form</h2>
+        <div class="form-group ">
+          <label for="name" class="sr-only">Name</label>
+          <input id="name" name="name" class="form-control" placeholder="Name" type="text" required>
+        </div>
+        <div class="form-group ">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" class="form-control" placeholder="Email" type="email" required>
+        </div>
+        <div class="form-group ">
+          <label for="message" class="sr-only">Message</label>
+          <textarea name="message" id="message" name="message" cols="30" rows="5" class="form-control"
+            placeholder="Message" required></textarea>
+        </div>
+        <div class="form-group ">
+          <input class="btn btn-primary" value="Send Message" type="submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  const msg = "Thank you for your reservation. We will contact you as soon as possible!"
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const formDataObj = Object.fromEntries(formData.entries());
+
+    const response = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formDataObj),
+    });
+    const data = await response.json();
+    console.log('Success:', data);
+    if (response.status == 200) {
+      alert(msg);
+    }
+  }
+</script>

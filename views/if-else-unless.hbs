@@ -1,0 +1,50 @@
+<div class="body">
+  <div id="content">
+    <div>
+      <ul>
+        {{#each recipes}}
+        <li>
+          {{#unless showIngredients}}
+          <a href="/recipes/{{id}}"><img src="{{smallImagePath}}" alt="Image"></a>
+          <div>
+            <h3><a href="/recipes/{{id}}">{{title}}</a></h3>
+            <p>
+              {{summary}}
+            </p>
+          </div>
+          {{/unless}}
+
+          {{#if showIngredients}}
+          <a href="/recipes/{{id}}"><img src="{{smallImagePath}}" alt="Image"></a>
+          <div>
+            <h3><a href="/recipes/{{id}}">{{title}}</a></h3>
+            <div>
+              <p>
+                {{summary}}
+              </p>
+              <ul>
+                {{#each Ingredients}}
+                <li>
+                  {{title}}
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+          {{/if}}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+{{!-- <div class="entry">
+{{#if author}}
+<h1>{{firstName}} {{lastName}}</h1>
+{{else}}
+<h1>Unknown Author</h1>
+{{/if}}
+</div> --}}

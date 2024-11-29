@@ -1,0 +1,32 @@
+<div class="body">
+  <div id="content">
+    {{#with recipe}}
+    <div>
+      <div>
+        <h3>{{title}}</h3>
+        <p>
+          {{{ description }}}
+        </p>
+        <a href="#"><img src="{{bigImagePath}}" alt="Image"></a>
+        <h5>INGREDIENTS</h5>
+        <ol class="ingredients">
+          {{#each Ingredients}}
+          <li>
+            {{quantity}} {{title}}
+          </li>
+          {{/each}}
+        </ol>
+        <h5>DIRECTIONS</h5>
+        <ol class="directions">
+          {{#each Directions}}
+          <li>
+            {{description}}
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+    {{/with}}
+
+  </div>
+</div>
